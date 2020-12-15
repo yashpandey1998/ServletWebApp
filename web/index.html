@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title style="color:red;">TESTPAGE</title>
+        <style>
+            body{
+               background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2xw6JmKRE5qDV2N_rZGHYY2lJwU-w8T0Cw&usqp=CAU');
+               background-size: cover;
+               
+            }
+            .container{
+                width:40%;
+                border:1px solid black;
+                margin:auto;
+                padding:20px;
+                font-size:22px;
+               
+               </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Registration Form</h1>
+        
+        <form id="myform" action="RegisterServlet" method="post">
+        <table>
+            <tr>
+                <td>First-Name</td>
+                <td><input type="text" name="fname" placeholder="Enter text"></td>
+                
+            </tr>
+             <tr>
+                <td>Last-Name</td>
+                <td><input type="text" name="lname" placeholder="Enter text"></td>
+                
+            </tr>
+             <tr>
+                <td>Email ID</td>
+                <td><input type="text" name="id" placeholder="Enter text"></td>
+                
+            </tr>
+            <tr>
+                <td>Gender
+                <td><input type="radio" name="gender" value="male">male &nbsp;<input type="radio" name= "gender" value="female"> female
+            </tr>
+            <tr>
+            <td>
+                Choose course&nbsp;&nbsp; 
+            </td>
+            <td>
+            <select name="Course" >
+                <option value=""selected disabled hidden>Select</option>
+                <option value="java">Java</option>
+                <option value="C">C</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                
+                
+            <td style="text-align:right ">
+                 
+                <input type="checkbox" value="checked" name="condition"/>
+                
+            </td>
+            <td>
+                Agree to the terms and conditions?
+            </td>
+            </tr>
+            
+            
+            <tr>
+                <td></td>
+                <td>
+                    <button type="register"/>Register</button>
+                    
+                    <button type="reset"/>Reset</button>
+                </td>
+                
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>
